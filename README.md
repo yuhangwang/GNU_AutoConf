@@ -18,6 +18,18 @@ You can download the compiled binary files at the [release page](https://github.
 * Compiler: gcc version 4.4.7 20120313 (Red Hat 4.4.7-11)
 
 ### Compilation steps
+#### Version: 2.64 (2009)
+```bash
+wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.64.tar.gz
+tar xvf autoconf-2.64.tar.gz
+mkdir build_autoconf-2.64
+cd build_autoconf-2.64
+../autoconf-2.64/configure --prefix=/home/steven/install/autoconf/2.64
+make -j16
+make check -j16 | tee QualityVerification.txt
+make install
+```
+
 #### Version: 2.69 (2012)
 ```bash
 wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz

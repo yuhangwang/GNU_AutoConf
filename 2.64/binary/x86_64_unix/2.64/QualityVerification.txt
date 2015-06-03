@@ -1,0 +1,601 @@
+make  check-recursive
+make[1]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64'
+Making check in bin
+make[2]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/bin'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/bin'
+Making check in .
+make[2]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64'
+Making check in lib
+make[2]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib'
+Making check in Autom4te
+make[3]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/Autom4te'
+make[3]: Nothing to be done for 'check'.
+make[3]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/Autom4te'
+Making check in m4sugar
+make[3]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/m4sugar'
+make  check-local
+make[4]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/m4sugar'
+make[4]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/m4sugar'
+make[3]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/m4sugar'
+Making check in autoconf
+make[3]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autoconf'
+make  check-local
+make[4]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autoconf'
+make[4]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autoconf'
+make[3]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autoconf'
+Making check in autotest
+make[3]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autotest'
+make  check-local
+make[4]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autotest'
+make[4]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autotest'
+make[3]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autotest'
+Making check in autoscan
+make[3]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autoscan'
+make[3]: Nothing to be done for 'check'.
+make[3]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autoscan'
+Making check in emacs
+make[3]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/emacs'
+make[3]: Nothing to be done for 'check'.
+make[3]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/emacs'
+make[3]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib'
+make[3]: Nothing to be done for 'check-am'.
+make[3]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib'
+make[2]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib'
+Making check in doc
+make[2]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/doc'
+make[2]: Nothing to be done for 'check'.
+make[2]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/doc'
+Making check in tests
+make[2]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/tests'
+make  check-local
+make[3]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/tests'
+:;{ \
+  echo '# Signature of the current package.' && \
+  echo 'm4_define([AT_PACKAGE_NAME],      [GNU Autoconf])' && \
+  echo 'm4_define([AT_PACKAGE_TARNAME],   [autoconf])' && \
+  echo 'm4_define([AT_PACKAGE_VERSION],   [2.64])' && \
+  echo 'm4_define([AT_PACKAGE_STRING],    [GNU Autoconf 2.64])' && \
+  echo 'm4_define([AT_PACKAGE_BUGREPORT], [bug-autoconf@gnu.org])' && \
+  echo 'm4_define([AT_PACKAGE_URL],       [http://www.gnu.org/software/autoconf/])'; \
+} > package.m4-t
+mv package.m4-t package.m4
+cd ../lib/autotest && make  autotest.m4f
+make[4]: Entering directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autotest'
+make[4]: 'autotest.m4f' is up to date.
+make[4]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/lib/autotest'
+autom4te_perllibdir='../../autoconf-2.64'/lib AUTOM4TE_CFG='../lib/autom4te.cfg'         ../bin/autom4te -B '..'/lib -B '../../autoconf-2.64'/lib         --language=autotest -I . -I ../../autoconf-2.64/tests suite.at -o testsuite.tmp
+mv testsuite.tmp testsuite
+/bin/sh ./testsuite 
+## ----------------------------- ##
+## GNU Autoconf 2.64 test suite. ##
+## ----------------------------- ##
+
+Executables (autoheader, autoupdate...).
+
+  1: Syntax of the shell scripts                     ok
+  2: Syntax of the Perl scripts                      ok
+  3: autom4te cache                                  ok
+  4: autom4te --force                                ok
+  5: autom4te and whitespace in file names           ok
+  6: autom4te --trace and unusual macro names        ok
+  7: autom4te --trace and whitespace                 ok
+  8: autoconf --trace: user macros                   ok
+  9: autoconf --trace: builtins                      ok
+ 10: autoconf: forbidden tokens, basic               ok
+ 11: autoconf: forbidden tokens, exceptions          ok
+ 12: autoconf: automatically allowed tokens          ok
+ 13: autoconf: the empty token                       ok
+ 14: autoconf: subdirectories                        ok
+ 15: autoconf: input from stdin                      ok
+ 16: autoconf: AC_AUTOCONF_VERSION                   ok
+ 17: ifnames                                         ok
+ 18: autoheader                                      ok
+ 19: autoheader and macros                           ok
+ 20: autoupdate                                      ok
+ 21: autoupdating AC_LINK_FILES                      ok
+ 22: autoupdating AC_PREREQ                          ok
+ 23: autoupdating AU_ALIAS                           ok
+ 24: autoupdating OLD to NEW                         ok
+ 25: autoupdating AC_HELP_STRING                     ok
+ 26: autoupdating with m4sugar                       ok
+ 27: autoupdating AC_LANG_SAVE                       ok
+ 28: autoupdating AC_FOREACH                         ok
+ 29: autoupdating with aclocal and m4_include        ok
+ 30: autom4te preselections                          ok
+ 31: autom4te cache locking                          ok
+ 32: autotools and whitespace in file names          ok
+
+M4sugar.
+
+ 33: m4_stack                                        ok
+ 34: m4_defn                                         ok
+ 35: m4_dumpdef                                      ok
+ 36: m4_warn                                         ok
+ 37: m4_divert_stack                                 ok
+ 38: m4_expansion_stack                              ok
+ 39: m4_require: error message                       ok
+ 40: m4_require: circular dependencies               ok
+ 41: m4_require: one-shot initialization             ok
+ 42: m4_require: nested                              ok
+ 43: m4sugar shorthand conditionals                  ok
+ 44: m4_cond                                         ok
+ 45: m4 lists                                        ok
+ 46: m4_split                                        ok
+ 47: m4_do                                           ok
+ 48: m4_append                                       ok
+ 49: m4_join                                         ok
+ 50: m4_expand                                       ok
+ 51: m4_text_wrap                                    ok
+ 52: m4_version_compare                              ok
+ 53: Standard regular expressions                    ok
+ 54: m4_bmatch                                       ok
+ 55: m4_bpatsubsts                                   ok
+ 56: m4_esyscmd_s                                    ok
+ 57: M4 loops                                        ok
+ 58: m4_map                                          ok
+ 59: m4_map_args and m4_curry                        ok
+ 60: m4_combine                                      ok
+ 61: m4_max and m4_min                               ok
+ 62: recursion                                       ok
+ 63: m4_set                                          ok
+
+M4sh.
+
+ 64: LINENO                                          ok
+ 65: LINENO stack                                    ok
+ 66: AS_BASENAME                                     ok
+ 67: AS_DIRNAME                                      ok
+ 68: AS_ECHO and AS_ECHO_N                           ok
+ 69: AS_EXIT                                         ok
+ 70: AS_MKDIR_P                                      ok
+ 71: AS_VERSION_COMPARE                              ok
+ 72: as_me                                           ok
+ 73: Negated classes in globbing                     ok
+ 74: Functions Support                               ok
+ 75: Functions and return Support                    ok
+ 76: Nested AS_REQUIRE_SHELL_FN                      ok
+ 77: Nested AS_REQUIRE                               ok
+ 78: AS_REQUIRE_SHELL_FN and m4_require              ok
+ 79: AS_HELP_STRING                                  ok
+ 80: AS_IF and AS_CASE                               ok
+ 81: AS_FOR                                          ok
+ 82: AS_LITERAL_IF                                   ok
+ 83: AS_VAR basics                                   ok
+ 84: AS_VAR_APPEND                                   ok
+ 85: AS_VAR_ARITH                                    ok
+ 86: AS_INIT cleanup                                 ok
+ 87: AS_INIT_GENERATED                               ok
+ 88: AS_MESSAGE_FD                                   ok
+ 89: _AS_CLEAN_DIR                                   ok
+ 90: ECHO_C                                          ok
+
+Autotest.
+
+ 91: Empty test suite                                ok
+ 92: Banner-only test suite                          ok
+ 93: Empty test                                      ok
+ 94: Empty check                                     ok
+ 95: AT_SETUP without AT_INIT                        ok
+ 96: AT_BANNER without AT_INIT                       ok
+ 97: AT_CLEANUP without AT_INIT                      ok
+ 98: Missing AT_CLEANUP                              ok
+ 99: AT_FAIL_IF without AT_SETUP                     ok
+100: AT_SKIP_IF without AT_SETUP                     ok
+101: AT_CHECK without AT_SETUP                       ok
+102: AT_DATA without AT_SETUP                        ok
+103: AT_XFAIL_IF without AT_SETUP                    ok
+104: AT_KEYWORDS without AT_SETUP                    ok
+105: AT_CLEANUP without AT_SETUP                     ok
+106: AT_BANNER inside AT_SETUP                       ok
+107: AT_SETUP inside AT_SETUP                        ok
+108: Multiple AT_INIT                                ok
+109: Tested programs                                 ok
+110: Startup error messages                          ok
+111: Truth                                           ok
+112: Fallacy                                         ok
+113: Skip                                            ok
+114: Hard fail                                       ok
+115: AT_FAIL_IF                                      ok
+116: AT_SKIP_IF                                      ok
+117: Syntax error                                    ok
+118: errexit                                         ok
+119: unquoted output                                 ok
+120: Logging                                         ok
+121: Binary output                                   ok
+122: Cleanup                                         ok
+123: Literal multiline command                       ok
+124: Multiline parameter expansion                   ok
+125: Backquote command substitution                  ok
+126: Multiline backquote command substitution        ok
+127: Parenthetical command substitution              ok
+128: Multiline parenthetical command substitution    ok
+129: Shell comment in command                        ok
+130: Invalid brace-enclosed parameter expansion      ok
+131: Multiline command from M4 expansion             ok
+132: Double-M4-quoted command                        ok
+133: Metacharacters in command from M4 expansion     ok
+134: BS-newline in command                           ok
+135: ^BS-newline in command                          ok
+136: BSx641-newline in command                       ok
+137: BS-BS-newline in command                        ok
+138: BSx640-newline in command                       ok
+139: Newline-CODE-BS-newline in command              ok
+140: Single-quote-BS-newline in command              ok
+141: Single-quote-newline-BS-newline in command      ok
+142: Input from stdin                                ok
+143: Backquote in a test title                       ok
+144: Single-quote in a test title                    ok
+145: Double-quote in a test title                    ok
+146: Backslash in a test title                       ok
+147: Brackets in a test title                        ok
+148: Left bracket in a test title                    ok
+149: Right bracket in a test title                   ok
+150: Quoted pound in a test title                    ok
+151: Pound in a test title                           ok
+152: Quoted comma in a test title                    ok
+153: Comma in a test title                           ok
+154: Parentheses in a test title                     ok
+155: Left paren in a test title                      ok
+156: Right paren in a test title                     ok
+157: Quoted Macro in a test title                    ok
+158: Macro in a test title                           ok
+159: Macro with backquote in a test title            ok
+160: Macro with single-quote in a test title         ok
+161: Macro with double-quote in a test title         ok
+162: Macro with backslash in a test title            ok
+163: Macro echoing macro in a test title             ok
+164: Macro echoing single-quote in a test title      ok
+165: Long test title in a test title                 ok
+166: Longer test title in a test title               ok
+167: Long test source lines                          ok
+168: Debugging a successful test                     ok
+169: Debugging script and environment                ok
+170: Debugging a failed test                         ok
+171: Using atlocal                                   ok
+172: Choosing where testsuite is run                 ok
+173: Banners                                         ok
+174: Keywords and ranges                             ok
+175: Keyword wrapping                                ok
+176: parallel test execution                         ok
+177: parallel truth                                  ok
+178: parallel fallacy                                ok
+179: parallel skip                                   ok
+180: parallel syntax error                           ok
+181: parallel errexit                                ok
+182: parallel autotest and signal handling           ok
+183: srcdir propagation                              ok
+184: whitespace in absolute testdir                  ok
+185: unusual file names                              ok
+
+Autoconf base layer.
+
+186: AC_REQUIRE: topological sort                    ok
+187: AC_REQUIRE: error message                       ok
+188: AC_REQUIRE & AC_DEFUN_ONCE: Require, expand     ok
+189: AC_REQUIRE & AC_DEFUN_ONCE: Expand, require     ok
+190: AC_REQUIRE & AC_PROVIDE                         ok
+191: AC_CACHE_CHECK                                  ok
+192: AC_COMPUTE_INT                                  ok
+193: AC_TRY_COMMAND                                  ok
+194: Input/Output                                    ok
+195: configure arguments                             ok
+196: configure directories                           ok
+
+Testing config.status.
+
+197: AC_CONFIG_COMMANDS with empty commands          ok
+198: Multiple AC_CONFIG_FILES                        ok
+199: Parameterized AC_CONFIG_FILES                   ok
+200: AC_ARG_VAR                                      ok
+201: AC_CONFIG_FILES, HEADERS, LINKS and COMMANDS    ok
+202: Macro calls in AC_CONFIG_COMMANDS tags          ok
+203: Missing templates                               ok
+204: configure invocation                            ok
+205: #define header templates                        ok
+206: Torturing config.status                         ok
+207: Substitute a 2000-byte string                   ok
+208: Define to a 2000-byte string                    ok
+209: Substitute and define special characters        ok
+210: Substitute a newline                            ok
+211: Define a newline                                ok
+212: AC_SUBST: variable name validation              ok
+213: datarootdir workaround                          ok
+214: srcdir                                          ok
+215: Signal handling                                 ok
+216: AC_CONFIG_LINKS and identical files             ok
+
+autoreconf.
+
+217: Configuring subdirectories                      ok
+218: Deep Package                                    ok
+219: Non-Autoconf AC_CONFIG_SUBDIRS                  ok
+220: Empty directory                                 ok
+221: Unusual Automake input files                    ok
+
+Low level compiling/preprocessing macros.
+
+222: AC_LANG, AC_LANG_PUSH & AC_LANG_POP             ok
+223: AC_REQUIRE & AC_LANG                            ok
+224: AC_RUN_IFELSE                                   ok
+225: Order of user actions and cleanup               ok
+226: AC_TRY_LINK_FUNC                                ok
+227: Multiple languages                              ok
+
+Testing autoconf/lang macros.
+
+228: AC_NO_EXECUTABLES                               ok
+229: AC_REQUIRE_CPP                                  ok
+
+C low level compiling/preprocessing macros.
+
+230: Extensions                                      ok
+231: Broken/missing compilers                        ok
+232: C keywords                                      ok
+233: AC_PROG_CPP requires AC_PROG_CC                 ok
+234: AC_PROG_CPP with warnings                       ok
+235: AC_PROG_CPP without warnings                    ok
+236: AC_PROG_CPP via CC                              ok
+237: AC_NO_EXECUTABLES (working linker)              ok
+238: AC_NO_EXECUTABLES (broken linker)               ok
+239: AC_USE_SYSTEM_EXTENSIONS                        ok
+240: AC_C_RESTRICT and C++                           ok
+
+Testing autoconf/c macros.
+
+241: AC_C_BACKSLASH_A                                ok
+242: AC_C_BIGENDIAN                                  ok
+243: AC_C_CHAR_UNSIGNED                              ok
+244: AC_C_FLEXIBLE_ARRAY_MEMBER                      ok
+245: AC_C_INLINE                                     ok
+246: AC_C_PROTOTYPES                                 ok
+247: AC_C_RESTRICT                                   ok
+248: AC_C_STRINGIZE                                  ok
+249: AC_C_TYPEOF                                     ok
+250: AC_C_VARARRAYS                                  ok
+251: AC_OPENMP                                       ok
+252: AC_PROG_CC_C89                                  ok
+253: AC_PROG_CC_C99                                  ok
+254: AC_PROG_CC_C_O                                  ok
+255: AC_PROG_CC_STDC                                 ok
+256: AC_PROG_CPP_WERROR                              ok
+257: AC_PROG_GCC_TRADITIONAL                         ok
+258: AC_LANG_C                                       ok
+259: AC_LANG_CPLUSPLUS                               ok
+260: AC_LANG_OBJC                                    ok
+
+Fortran low level compiling/preprocessing macros.
+
+261: GNU Fortran 77                                  ok
+262: GNU Fortran                                     ok
+
+Testing autoconf/fortran macros.
+
+263: AC_F77_MAIN                                     ok
+264: AC_F77_WRAPPERS                                 ok
+265: AC_FC_MAIN                                      ok
+266: AC_FC_WRAPPERS                                  ok
+267: AC_PROG_F77_C_O                                 ok
+268: AC_PROG_FC_C_O                                  ok
+269: AC_F77_NAME_MANGLING                            ok
+270: AC_LANG_FORTRAN77                               ok
+
+Erlang low level compiling and utility macros.
+
+271: Erlang                                          skipped (erlang.at:32)
+272: AC_ERLANG_CHECK_LIB                             skipped (erlang.at:54)
+273: AC_ERLANG_SUBST_ROOT_DIR                        skipped (erlang.at:74)
+274: AC_ERLANG_SUBST_LIB_DIR                         skipped (erlang.at:91)
+275: AC_ERLANG_SUBST_INSTALL_LIB_DIR                 ok
+276: AC_ERLANG_SUBST_INSTALL_LIB_SUBDIR              ok
+277: AC_ERLANG_SUBST_ERTS_VER                        skipped (erlang.at:130)
+
+Semantics.
+
+278: AC_CHECK_LIB                                    ok
+279: AC_SEARCH_LIBS                                  ok
+280: AC_SEARCH_LIBS (none needed)                    ok
+281: AC_CHECK_DECLS                                  ok
+282: AC_CHECK_FUNCS                                  ok
+283: AC_REPLACE_FUNCS                                ok
+284: AC_CHECK_HEADERS                                ok
+285: AC_CHECK_HEADERS (preprocessor test)            ok
+286: AC_CHECK_HEADERS (compiler test)                ok
+287: AC_CHECK_MEMBERS                                ok
+288: AC_CHECK_ALIGNOF                                ok
+289: AC_CHECK_ALIGNOF (cross compile)                ok
+290: AC_CHECK_ALIGNOF struct                         ok
+291: AC_CHECK_ALIGNOF struct (cross compile)         ok
+292: AC_CHECK_SIZEOF                                 ok
+293: AC_CHECK_SIZEOF (cross compile)                 ok
+294: AC_CHECK_SIZEOF struct                          ok
+295: AC_CHECK_SIZEOF struct (cross compile)          ok
+296: AC_CHECK_TYPES                                  ok
+297: AC_CHECK_TYPES: backward compatibility          ok
+298: AC_CHECK_FILES                                  ok
+299: AC_CHECK_PROG & AC_CHECK_PROGS                  ok
+300: AC_C_BIGENDIAN                                  ok
+301: AC_PATH_PROG & AC_PATH_PROGS                    ok
+302: AC_PATH_PROGS_FEATURE_CHECK                     ok
+303: AC_PATH_XTRA                                    ok
+304: AC_SYS_RESTARTABLE_SYSCALLS                     ok
+305: AC_FUNC_SETVBUF_REVERSED                        ok
+306: AC_FUNC_WAIT3                                   ok
+
+Testing autoconf/general macros.
+
+307: AC_ARG_ENABLE                                   ok
+308: AC_ARG_PROGRAM                                  ok
+309: AC_ARG_WITH                                     ok
+310: AC_CHECK_DECLS_ONCE                             ok
+311: AC_EGREP_CPP                                    ok
+312: AC_EGREP_HEADER                                 ok
+313: AC_LIBOBJ                                       ok
+314: AC_LIBSOURCES                                   ok
+315: AC_PREFIX_DEFAULT                               ok
+316: AC_PRESERVE_HELP_ORDER                          ok
+317: AC_CHECKING                                     ok
+318: AC_COMPILE_CHECK                                ok
+319: AC_ENABLE                                       ok
+320: AC_FOREACH                                      ok
+321: AC_MSG_RESULT_UNQUOTED                          ok
+322: AC_TRY_COMPILE                                  ok
+323: AC_TRY_CPP                                      ok
+324: AC_TRY_LINK                                     ok
+325: AC_TRY_RUN                                      ok
+326: AC_VALIDATE_CACHED_SYSTEM_TUPLE                 ok
+327: AC_WITH                                         ok
+
+Testing autoconf/status macros.
+
+328: AC_OUTPUT_COMMANDS                              ok
+
+Testing autoconf/specific macros.
+
+329: AC_SYS_INTERPRETER                              ok
+330: AC_SYS_LARGEFILE                                ok
+331: AC_SYS_LONG_FILE_NAMES                          ok
+332: AC_SYS_POSIX_TERMIOS                            ok
+333: AC_AIX                                          ok
+334: AC_ARG_ARRAY                                    ok
+335: AC_DECL_SYS_SIGLIST                             ok
+336: AC_DYNIX_SEQ                                    ok
+337: AC_HAVE_POUNDBANG                               ok
+338: AC_IRIX_SUN                                     ok
+339: AC_ISC_POSIX                                    ok
+340: AC_MINIX                                        ok
+341: AC_SCO_INTL                                     ok
+342: AC_XENIX_DIR                                    ok
+
+Testing autoconf/programs macros.
+
+343: AC_PROG_AWK                                     ok
+344: AC_PROG_FGREP                                   ok
+345: AC_PROG_INSTALL                                 ok
+346: AC_PROG_LEX                                     ok
+347: AC_PROG_LN_S                                    ok
+348: AC_PROG_MAKE_SET                                ok
+349: AC_PROG_MKDIR_P                                 ok
+350: AC_PROG_RANLIB                                  ok
+351: AC_PROG_SED                                     ok
+352: AC_PROG_YACC                                    ok
+353: AC_CHECK_TOOL_PREFIX                            ok
+354: AC_DECL_YYTEXT                                  ok
+355: AC_RSH                                          ok
+
+Testing autoconf/headers macros.
+
+356: AC_CHECK_HEADERS_ONCE                           ok
+357: AC_HEADER_ASSERT                                ok
+358: AC_HEADER_MAJOR                                 ok
+359: AC_HEADER_RESOLV                                ok
+360: AC_HEADER_STAT                                  ok
+361: AC_HEADER_STDBOOL                               ok
+362: AC_HEADER_TIOCGWINSZ                            ok
+363: AC_DIR_HEADER                                   ok
+364: AC_MEMORY_H                                     ok
+365: AC_UNISTD_H                                     ok
+366: AC_USG                                          ok
+
+Testing autoconf/types macros.
+
+367: AC_STRUCT_DIRENT_D_INO                          ok
+368: AC_STRUCT_DIRENT_D_TYPE                         ok
+369: AC_STRUCT_ST_BLOCKS                             ok
+370: AC_STRUCT_TIMEZONE                              ok
+371: AC_TYPE_INT16_T                                 ok
+372: AC_TYPE_INT32_T                                 ok
+373: AC_TYPE_INT64_T                                 ok
+374: AC_TYPE_INT8_T                                  ok
+375: AC_TYPE_INTMAX_T                                ok
+376: AC_TYPE_INTPTR_T                                ok
+377: AC_TYPE_LONG_DOUBLE                             ok
+378: AC_TYPE_LONG_DOUBLE_WIDER                       ok
+379: AC_TYPE_MODE_T                                  ok
+380: AC_TYPE_OFF_T                                   ok
+381: AC_TYPE_SSIZE_T                                 ok
+382: AC_TYPE_UINT16_T                                ok
+383: AC_TYPE_UINT32_T                                ok
+384: AC_TYPE_UINT64_T                                ok
+385: AC_TYPE_UINT8_T                                 ok
+386: AC_TYPE_UINTMAX_T                               ok
+387: AC_TYPE_UINTPTR_T                               ok
+388: AC_C_LONG_DOUBLE                                ok
+389: AC_INT_16_BITS                                  ok
+390: AC_LONG_64_BITS                                 ok
+391: AC_STRUCT_ST_BLKSIZE                            ok
+392: AC_STRUCT_ST_RDEV                               ok
+393: AC_TYPE_SIGNAL                                  ok
+394: AM_TYPE_PTRDIFF_T                               ok
+
+Testing autoconf/functions macros.
+
+395: AC_CHECK_FUNCS_ONCE                             ok
+396: AC_FUNC_CHOWN                                   ok
+397: AC_FUNC_CLOSEDIR_VOID                           ok
+398: AC_FUNC_ERROR_AT_LINE                           ok
+399: AC_FUNC_FNMATCH                                 ok
+400: AC_FUNC_FORK                                    ok
+401: AC_FUNC_FSEEKO                                  ok
+402: AC_FUNC_GETGROUPS                               ok
+403: AC_FUNC_GETMNTENT                               ok
+404: AC_FUNC_GETPGRP                                 ok
+405: AC_FUNC_LSTAT                                   ok
+406: AC_FUNC_MALLOC                                  ok
+407: AC_FUNC_MBRTOWC                                 ok
+408: AC_FUNC_MEMCMP                                  ok
+409: AC_FUNC_MKTIME                                  ok
+410: AC_FUNC_MMAP                                    ok
+411: AC_FUNC_OBSTACK                                 ok
+412: AC_FUNC_REALLOC                                 ok
+413: AC_FUNC_SELECT_ARGTYPES                         ok
+414: AC_FUNC_SETPGRP                                 ok
+415: AC_FUNC_STAT                                    ok
+416: AC_FUNC_STRCOLL                                 ok
+417: AC_FUNC_STRERROR_R                              ok
+418: AC_FUNC_STRFTIME                                ok
+419: AC_FUNC_STRNLEN                                 ok
+420: AC_FUNC_STRTOD                                  ok
+421: AC_FUNC_STRTOLD                                 ok
+422: AC_FUNC_UTIME_NULL                              ok
+423: AC_FUNC_VPRINTF                                 ok
+
+Testing autoconf/libs macros.
+
+424: AC_HAVE_LIBRARY                                 ok
+
+Compatibility with other tools.
+
+425: Libtool                                         ok
+
+Autoscan.
+
+426: autoscan                                        FAILED (autoscan.at:46)
+
+## ------------- ##
+## Test results. ##
+## ------------- ##
+
+## -------------------------- ##
+## testsuite.log was created. ##
+## -------------------------- ##
+
+Please send `tests/testsuite.log' and all information you think might help:
+
+   To: <bug-autoconf@gnu.org>
+   Subject: [GNU Autoconf 2.64] testsuite: 426 failed
+
+
+You may investigate any problem if you feel able to do so, in which
+case the test suite provides a good starting point.  Its output may
+be found below `tests/testsuite.dir'.
+
+Makefile:582: recipe for target 'check-local' failed
+make[3]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/tests'
+Makefile:397: recipe for target 'check-am' failed
+make[2]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64/tests'
+Makefile:332: recipe for target 'check-recursive' failed
+make[1]: Leaving directory '/Scr/scr-test-steven/Programs/AutoConf/build_autoconf-2.64'
+Makefile:639: recipe for target 'check' failed
